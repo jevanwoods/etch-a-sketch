@@ -1,0 +1,29 @@
+:root {
+    --etchSize: 16;
+}
+
+#etchBox {
+    border: 5px solid black;
+    height: 700px;
+    width: 700px;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+}
+.etchSquare {
+    border: 1px solid black;
+    grid-column: auto;
+    grid-row: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.15s;
+}
+
+.etchSquare:hover {
+    background-color: black;
+}
+
+.passedOver {
+    background-color: black;
+}
